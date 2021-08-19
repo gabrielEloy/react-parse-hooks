@@ -13,7 +13,7 @@ const Auth = () => {
     }
     const toggleIsRegistering = () => setIsRegistering(!isRegistering);
     
-    const toggleRegisterText = isRegistering ? "use an existing account": "Create an account"
+    const [toggleRegisterText, authActionText] = isRegistering ? ["use an existing account", "register"]: ["Create an account", "Login"]
     
     return (
         <div className="auth-container">
